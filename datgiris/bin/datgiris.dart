@@ -46,8 +46,14 @@ void main() { // Projenin başladığı (çalıştırıldığı nokta main dosya
   // }
 
 
- double yuvarla = 5.6;
+  double yuvarla = 5.6;
   print("yuvarla : ${yuvarla.roundToDouble()}");
+
+  List data = [{'name' : "emre", 'surname' : "akca"},{'name':"kadir"},{'name':"betül"},{'name':"yasin"}];
+  for(var i = 0; i<data.length; i++){
+    print("${data[i]['name']} ${data[i]['surname']}");
+  }
+  
 
 
 }
